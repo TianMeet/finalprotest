@@ -1,272 +1,14 @@
-header {
-    width: 100%;
-    height: 64px;
-    background-color: #ffffff;
-}
-header h1 {
-    float: left;
-    font-size: 0;
-    height: 100%;
-    width: 100px;
-    margin-left: 24px
-}
-header .logo_link {
-    display: block;
-    font-family: 'icomoon';
-    width: 20%;
-    height: 100%;
-    font-size: 24px;
-    color: red;
-    text-align: center;
-    line-height: 64px;
-}
-.top_nav {
-    float: left;
-    width: 25%;
-    height: 100%;
-    margin-left: 18px;
-    /* background-color: red; */
-}
-.top_nav ul .nav {
-    float: left;
-    /* padding: 20px; */
-}
-.top_nav ul li a {
-    display: block;
-    height: 64px;
-    padding: 20px;
-    font-size: 18px;
-    color: #000;
-}
-.nav ul {
-    position: relative;
-    display: none;
-    width: 100%;
-    height: 150px;
-    background-color: #eee;
-    border-radius: 4px;
-    opacity: .8;
-    z-index: 100;
-}
-.nav ul li {
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: all .3s;
-}
-.nav ul li:hover {
-    background-color: rgba(255, 166, 0, 0.993);
-}
-.search_bar {
-    float: left;
-    width: 30%;
-    height: 75%;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding-left: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    transition: all .3s;
-    /* background-color: #f4f4f4; */
-}
-.search_bar input {
-    float: left;
-    box-sizing: border-box;
-    width: 85%;
-    height: 70%;
-    margin-top: 7px;
-    /* border-radius: 8px; */
-    border: 0;
-    padding-left: 10px;
-    color: #545a5dcb;
-}
-.search_bar:hover {
-    border-color: orangered;
-}
-.search_bar a {
-    float: left;
-    display: block;
-    width: 15%;
-    height: 100%;
-    background: url(../images/sousuo.png)  no-repeat 9px 5px;
-    background-size: 36px;
-}
-.self_pic {
-    float: left;
-    height: 40px;
-    width: 40px;
-    margin-top: 12px;
-    margin-left: 12px;
-    border-radius: 50%;
-}
-.self_pic a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(../upload/headportrait.webp) no-repeat;
-    background-size: 100%;
-    border-radius: 50%;
-}
-.personal_related {
-    float: left;
-    width: 27%;
-    height: 100%;
-    margin-left: 10px;
-    /* background-color: red; */
-}
-.personal_related ul {
-    float: left;
-    width: 70%;
-    height: 100%;
-}
-.personal_related ul li {
-    position: relative;
-    float: left;
-    display: block;
-    padding: 12px;
-    height: 100%;
-    font-size: 20px;
-}
-.personal_related ul li a {
-    /* position: relative; */
-    display: block;
-    width: 100%;
-    height: 64%;
-}
-.personal_related ul .item1::before {
-    position: absolute;
-    left: 0;
-    top: 14px;
-    height: 30px;
-    width: 100%;
-    text-align: center;
-    content: '\e909';
-}
-.personal_related ul .item2::before {
-    position: absolute;
-    left: 0;
-    top: 14px;
-    height: 30px;
-    width: 100%;
-    content: '\e90a';
-    text-align: center;
-}
-.personal_related ul .item3::before {
-    position: absolute;
-    left: 0;
-    top: 14px;
-    height: 30px;
-    width: 100%;
-    content: '\e9d7';
-    text-align: center;
-}
-.personal_related ul .item4::before {
-    position: absolute;
-    left: 0;
-    top: 14px;
-    height: 30px;
-    width: 100%;
-    content: '\e90b';
-    text-align: center;
-}
-.personal_related ul li a span {
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-top: 21px;
-    font-family: 'icomoon';
-    font-size: 15px;
-    color: #000;
-}
-.upload {
-    /* overflow: hidden; */
-    position: relative;
-    float: left;
-    width: 30%;
-    height: 100%;
-    padding-top: 12px;
-    transition: all .3s;
-}
-.upload:hover a{
-    background-color: rgba(252, 92, 92, 0.699);
-}
-.upload .upload_a {
-    display: block;
-    width: 100%;
-    height: 80%;
-    background-color: orangered;
-    border-radius: 6px;
-    font-size: 18px;
-    font-family: 'icomoon';
-    text-align: center;
-    line-height: 40px;
-    color: #ffffff;
-    transition: all .4s ;
-}
-.personal_related ul li span  {
-    transition: all .4s ;
-}
-.personal_related ul li a:hover span{
-    color: orangered;
-}
-.contribute .ctr_contain ul li {
-    padding: 0;
-    font-size: 12px;
-}
-.contribute {
-    display: none;
-    position: absolute;
-    right: 0px;
-    top: 64px;
-    overflow: hidden;
-    width: 240px;
-    height: 54px;
-    background-color: rgba(247, 30, 30, 0.993);
-    border-radius: 4px;
-    opacity: .6;
-    z-index: 100;
-}
-.contribute .ctr_contain {
-    width: 100%;
-    height: 100%;
-}
-.contribute .ctr_contain a {
-    display: block;
-    width: 100%;
-    height: 54px;
-    padding-top: 8px;
-    color: #20D493;
-    transition: all .3s;
-}
-.contribute .ctr_contain a:hover {
-    color: #0b5ffa;
-}
-.contribute .ctr_contain li {
-    /* display: block; */
-    float: left;
-    width: 25%;
-    height: 100%;
-    line-height: 54px;
-    text-align: center;
-    color: #eee;
-}
-.contribute .ctr_contain li span {
-    display: block;
-    width: 100%;
-    height: 18px;
-    font-family: 'icomoon';
-    text-align: center;
-    line-height: 20px;
+.container {
+    width: 90%;
+    height: 900px;
+    margin: 0px auto;
+    margin-top: 50px;
 }
 .middle_contain {
     position: relative;
-    width: 90%;
+    width: 100%;
     height: 340px;
-    margin: 0px auto;
-    margin-top: 50px;
+    /* margin: 0px auto; */
     /* background-color: rgba(21, 255, 0, 0.753); */
 }
 .slideshow {
@@ -352,9 +94,10 @@ header .logo_link {
     color: orangered;
 }
 .animation,
-.cartoon {
+.cartoon,
+.novel {
     position: absolute;
-    width: 85px;
+    /* width: 85px; */
     height: 20px;
     /* background-color: red; */
     font-family: 'icomoon';
@@ -363,7 +106,8 @@ header .logo_link {
     line-height: 20px;
 }
 .animation span,
-.cartoon span {
+.cartoon span,
+.novel span {
     position: relative;
     display: block;
     width: 100%;
@@ -373,6 +117,14 @@ header .logo_link {
 }
 .animation {
     left: 85px;
+    top: -24px;
+}
+.cartoon {
+    left: 167px;
+    top: -24px;
+}
+.novel {
+    left: 240px;
     top: -24px;
 }
 .boder {
@@ -393,26 +145,9 @@ header .logo_link {
     border: 3px transparent solid;
     border-bottom-color: blue;
 }
-/* .animation span::after {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    border: 3px transparent solid;
-    border-bottom-color: blue;
-} */
-.cartoon {
-    left: 170px;
-    top: -24px;
-}
 .anima_box,
-.cartn_box {
+.cartn_box,
+.novel_box {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -497,4 +232,236 @@ header .logo_link {
 }
 .schedule span:nth-of-type(2) {
     padding-left: 5px;
+}
+.readhis,
+.novcolt,
+.hotnove {
+    float: left;
+    height: 100%;
+    font-family: 'icomoon';
+}
+.readhis {
+    width: 40%;
+    /* background-color: antiquewhite; */
+}
+.readhis h3 {
+    font-weight: 400;
+    padding-left: 5px;
+    height: 24px;
+    line-height: 24px;
+}
+.his {
+    width: 100%;
+    height: 43%;
+    margin-top: 1px;
+}
+.his a {
+    display: block;
+    float: left;
+    height: 100%;
+    color: #000;
+}
+.his .novpic {
+    width: 40%;
+    margin-left: 2px;
+}
+.his .novpic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.his .novitr {
+    width: 59%;
+}
+.his .novitr h4 {
+    width: 100%;
+    height: 24px;
+    padding-left: 4px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.his .novitr p {
+    height: 63%;
+    padding: 4px;
+    font-size: 12px;
+    /* background-color: red; */
+    color: rgba(0, 0, 0, 0.411);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+.his .novitr span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding-left: 6px;
+    line-height: 30px;
+    color: #A9A9A9;
+}
+.morehis {
+    display: block;
+    width: 100%;
+    height: 22px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    color: cyan;
+    transition: all .3s;
+}
+.morehis:hover{
+    background-color: darkcyan;
+}
+.novcolt {
+    width: 35%;
+    border-left: 1px solid #eee;
+    /* background-color: blueviolet; */
+}
+.novcolt h3 {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 7px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'icomoon';
+    font-weight: 400;
+    font-size: 16px;
+}
+.novcolt h3 span {
+    font-size: 18px;
+}
+.novcolt ul {
+    width: 100%;
+    height: 85%;
+}
+.novcolt ul li {
+    width: 100%;
+    height: 12.5%;
+    border-bottom: 1px solid #eee;
+}
+.novcolt ul li:hover a{
+    background-color: #f4f4f4;
+}
+.novcolt ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    transition: all .3s;
+}
+.novcolt ul li a span {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    width: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.novcolt ul li .first1 {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 18px;
+    padding-left: 5px;
+    text-align: center;
+    line-height: 36px;
+    /* background-color: red; */
+}
+.novcolt ul li .first {
+    display: block;
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding-left: 10px;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.novcolt .favorite {
+    width: 100%;
+    height: 22px;
+    margin-top: 2px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    color: cyan;
+    transition: all .3s;
+}
+.novcolt .favorite:hover{
+    background-color: darkcyan;
+}
+.hotnove {
+    width: 25%;
+    /* background-color: cadetblue; */
+}
+.hotnove h3 {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 4px;
+    font-family: 'icomoon';
+    line-height: 20px;
+}
+.hotnove .little_slider {
+    width: 100%;
+    height:100px;
+    margin-top: 20px;
+    background-color: red;
+}
+.swiper-wrapper .pos span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: aqua;
+}
+.swiper-wrapper .pos{
+    cursor: pointer;
+}
+.hotnove ul {
+    width: 100%;
+    height: 150px;
+}
+.hotnove ul li{
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+}
+.hotnove ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.705);
+    transition: all .3s;
+
+}
+.hotnove ul li a:hover {
+    background-color: #f4f4f4;
+}
+.hotnove ul li a em {
+    float: left;
+    display: block;
+    height: 100%;
+    width: 18px;
+    padding-left: 5px;
+    text-align: center;
+    line-height: 25px;
+}
+.hotnove ul li a h5 {
+    float: left;
+    width: 80%;
+    height: 100%;
+    padding-left: 6px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }

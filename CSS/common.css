@@ -1,0 +1,351 @@
+/* 头部区域CSS样式 */
+header {
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+}
+header h1 {
+    float: left;
+    font-size: 0;
+    height: 100%;
+    width: 100px;
+    margin-left: 24px
+}
+header .logo_link {
+    display: block;
+    font-family: 'icomoon';
+    width: 20%;
+    height: 100%;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    line-height: 64px;
+}
+.top_nav {
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin-left: 18px;
+}
+.top_nav ul .nav {
+    float: left;
+}
+.top_nav ul li a {
+    display: block;
+    height: 64px;
+    padding: 20px;
+    font-size: 18px;
+    color: #000;
+}
+.nav ul {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    border-radius: 4px;
+    opacity: .8;
+    z-index: 100;
+}
+.nav ul li {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.nav ul li:hover {
+    background-color: rgba(255, 166, 0, 0.993);
+}
+.search_bar {
+    float: left;
+    width: 30%;
+    height: 75%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .3s;
+}
+.search_bar input {
+    float: left;
+    box-sizing: border-box;
+    width: 85%;
+    height: 70%;
+    margin-top: 7px;
+    border: 0;
+    padding-left: 10px;
+    color: #545a5dcb;
+}
+.search_bar:hover {
+    border-color: orangered;
+}
+.search_bar a {
+    float: left;
+    display: block;
+    width: 15%;
+    height: 100%;
+    background: url(../images/sousuo.png)  no-repeat 9px 5px;
+    background-size: 36px;
+}
+.self_pic {
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin-top: 12px;
+    margin-left: 12px;
+    border-radius: 50%;
+}
+.self_pic a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../upload/headportrait.webp) no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+}
+.personal_related {
+    float: left;
+    width: 27%;
+    height: 100%;
+    margin-left: 10px;
+}
+.personal_related ul {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+.personal_related ul li {
+    position: relative;
+    float: left;
+    display: block;
+    padding: 12px;
+    height: 100%;
+    font-size: 20px;
+}
+.personal_related ul li a {
+    display: block;
+    width: 100%;
+    height: 64%;
+}
+.personal_related ul .item1::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    content: '\e909';
+}
+.personal_related ul .item2::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 30px;
+    width: 100%;
+    content: '\e90a';
+    text-align: center;
+}
+.personal_related ul .item3::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 30px;
+    width: 100%;
+    content: '\e9d7';
+    text-align: center;
+}
+.personal_related ul .item4::before {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 30px;
+    width: 100%;
+    content: '\e90b';
+    text-align: center;
+}
+.personal_related ul li a span {
+    display: block;
+    width: 30px;
+    height: 20px;
+    margin-top: 21px;
+    font-family: 'icomoon';
+    font-size: 15px;
+    color: #000;
+}
+.upload {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding-top: 12px;
+    transition: all .3s;
+}
+.upload:hover a{
+    background-color: rgba(252, 92, 92, 0.699);
+}
+.upload .upload_a {
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-color: orangered;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    transition: all .4s ;
+}
+.personal_related ul li span  {
+    transition: all .4s ;
+}
+.personal_related ul li a:hover span{
+    color: orangered;
+}
+.contribute .ctr_contain ul li {
+    padding: 0;
+    font-size: 12px;
+}
+.contribute {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 64px;
+    overflow: hidden;
+    width: 240px;
+    height: 54px;
+    background-color: rgba(247, 30, 30, 0.993);
+    border-radius: 4px;
+    opacity: .6;
+    z-index: 100;
+}
+.contribute .ctr_contain {
+    width: 100%;
+    height: 100%;
+}
+.contribute .ctr_contain a {
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding-top: 8px;
+    color: #20D493;
+    transition: all .3s;
+}
+.contribute .ctr_contain a:hover {
+    color: #0b5ffa;
+}
+.contribute .ctr_contain li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 54px;
+    text-align: center;
+    color: #eee;
+}
+.contribute .ctr_contain li span {
+    display: block;
+    width: 100%;
+    height: 18px;
+    font-family: 'icomoon';
+    text-align: center;
+    line-height: 20px;
+}
+/* 头部区域CSS样式 */
+
+/* footer区域 */
+footer {
+    width: 100%;
+    height: 360px;
+    background-color: #ffffff;
+}
+footer .relevant_info {
+    width: 100%;
+    height: 130px;
+    padding-top: 15px;
+    border-bottom: 1px solid #eee;
+}
+footer .relevant_info .float {
+    width: 20%;
+    height: 100%;
+}
+footer .relevant_info h1 {
+    display: block;
+    height: 18px;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 50px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #A6A6A6;
+}
+footer .relevant_info p {
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+}
+footer .relevant_info .coper a:nth-child(1) {
+    margin-left: 50px;
+}
+.display {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    color: #000;
+}
+footer .relevant_info .office a:nth-child(1),
+footer .relevant_info .office a:nth-child(3) {
+    margin-left: 50px;
+}
+footer .relevant_info .office a:nth-child(3),
+footer .relevant_info .office a:nth-child(4) {
+    margin-top: 5px;
+}
+footer .relevant_info .load a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    margin-top: 5px;
+    color: #000;
+}
+footer .relevant_info .equic {
+    display: block;
+    height: 20px;
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 5px;
+    color: #000;
+}
+.law_firm_info {
+    width: 100%;
+    height: 50%;
+}
+.law_firm_info div {
+    width: 30%;
+    height: 100%;
+}
+.law_firm_info div p {
+    margin-top: 15px;
+    padding-left: 30px;
+    font-size: 12px;
+    width: 100%;
+    color: #A6A6A6;
+}
+.law_firm_info div p a {
+    color: #A6A6A6;
+
+}
+.footerlogo {
+    width: 100%;
+    height: 60px;
+    font-family: 'icomoon';
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #A6A6A6;
+}
+/* footer区域 */

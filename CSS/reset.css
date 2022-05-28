@@ -33,6 +33,10 @@ html,body{
 ol,ul{
   list-style: none;
 }
+em,strong{
+  font-style:normal;
+  font-weight:normal;
+}
 a{
   text-decoration: none;
 }
@@ -53,4 +57,10 @@ table{
 input {
   padding: 0;
   margin: 0;
+}
+.float {
+  float: left;
+}
+.block {
+  display: block;
 }

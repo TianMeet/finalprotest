@@ -1,6 +1,6 @@
 .container {
     width: 90%;
-    height: 900px;
+    height: 800px;
     margin: 0px auto;
     margin-top: 50px;
 }
@@ -464,4 +464,43 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+}
+.next_contain {
+    height: 420px;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    background-color: #ffffff;
+}
+
+
+
+
+
+.gotopbtn {
+    position: fixed;
+    right:  10px;
+    bottom: 25%;
+    width: 42px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    z-index: 999;
+}
+.gotopbtn span {
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 21px;
+}
+.gotopbtn div {
+    width: 100%;
+    height: 15px;
+    padding-top: 5px;
+    font-family:'icomoon';
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
 }

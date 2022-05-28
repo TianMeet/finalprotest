@@ -93,4 +93,16 @@ window.addEventListener('load',function(){
         novbox.style.display = 'block';
       //
     })
+    var distence = 200;
+    $('#gotopbtn').hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>= distence){
+        $('#gotopbtn').fadeIn(500);
+      }else{
+        $('#gotopbtn').fadeOut(500);
+      }
+    })
+    $('#gotopbtn').click(function(){
+      $('body,html').animate({scrollTop:0},400)
+    })
 })

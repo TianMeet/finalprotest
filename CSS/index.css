@@ -491,7 +491,7 @@
 .bigrecommend {
     /* overflow: hidden; */
     position: relative;
-    width: 800px;
+    width: 70%;
     height: 95%;
     padding: 5px;
     border-right: 1px solid #eee;
@@ -553,7 +553,7 @@
 .recommendblock {
     overflow: hidden;
     position: absolute;
-    right: 0;
+    right: 10px;
     top: 0;
     width: 52%;
     height: 100%;
@@ -588,8 +588,9 @@
     position: absolute;
     right: 6px;
     top: 5px;
-    width: 340px;
+    width: 30%;
     height: 95%;
+    padding-left: 10px;
     border-radius: 2px;
     /* background-color: red; */
 }

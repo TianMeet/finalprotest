@@ -64,3 +64,11 @@ input {
 .block {
   display: block;
 }
+.colora {
+  color: #000;
+  font-size: 18px;
+}
+i,
+em {
+  font-style: normal;
+}

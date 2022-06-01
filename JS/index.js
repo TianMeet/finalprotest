@@ -105,4 +105,21 @@ window.addEventListener('load',function(){
     $('#gotopbtn').click(function(){
       $('body,html').animate({scrollTop:0},400)
     })
+
+    //游戏tab栏的制作
+    var gametabbtn = document.querySelector('#game_tab').querySelectorAll('div');
+    var gamepages =  document.querySelector('#gamechooes').querySelectorAll('ul');
+    for(var i = 0;i<gametabbtn.length;i++){
+      gametabbtn[i].setAttribute('index',i);
+      gametabbtn[i].addEventListener('click',function(){
+        for(var j = 0;j<gamepages.length;j++){
+          gamepages[j].style.display = 'none';
+          gametabbtn[j].classList.remove('color');
+        }
+        var index = this.getAttribute('index');
+        gamepages[index].style.display = 'block';
+        gametabbtn[index].classList.add('color');
+
+      })
+    }
 })

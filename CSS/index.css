@@ -697,16 +697,6 @@
     position: relative;
     width: 70%;
     height: 100%;
-    /* padding: 2px 2px; */
-    /* background-color: aquamarine; */
-}
-.gamerecomm {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30%;
-    height: 100%;
-    background: blueviolet;
 }
 .game_tab {
     height: 100%;
@@ -767,4 +757,21 @@
     text-align: center;
     line-height: 24px;
     cursor: pointer;
+}
+.gamerecomm {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    background: #dff9fb;
+}
+.gamerecomm span {
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 120px;
+    height: 30px;
+    font-family: 'icomoon';
 }

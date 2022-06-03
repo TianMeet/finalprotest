@@ -61,6 +61,9 @@ input {
 .float {
   float: left;
 }
+.floatr {
+  float: right;
+}
 .block {
   display: block;
 }
@@ -74,4 +77,43 @@ em {
 }
 .color {
   background-color: #12CBC4;
+}
+.choosenum .selcolor {
+  background-color: #1e90ff;
+}
+.hide1{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+}
+.hide2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.hide3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.datatatol .size18 {
+  font-size: 18px;
+}
+.datatatol .deepgrew {
+  color: rgb(168, 168, 168);
+}
+.cursor {
+  cursor: pointer;
+}
+.colororanged {
+  color: orangered!important;
+}
+.color_grew{
+  background-color: #e5e5e5!important;
 }

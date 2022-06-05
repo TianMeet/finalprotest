@@ -53,4 +53,8 @@ window.addEventListener('load',function(){
             flag3 = true;
         }
     })
+    // // more_rele模块滑动显示
+    // $('.more_relet').click(function(){
+    //     $('.reletoneof').animate({top : '-270px'})
+    // })
 })

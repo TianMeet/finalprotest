@@ -9,12 +9,12 @@ window.addEventListener('load',()=>{
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
-            popctn.style.display = 'block'
+            popctn.style.opacity = '.8'
         }
         for(let k = 0;k<lis.length;k++){
           lis[k].onclick = function(){
             ipt.value = lis[k].innerHTML.substring(2)
-            popctn.style.display = 'none'
+            popctn.style.opacity = '0'
           }
         }
     })
@@ -26,8 +26,8 @@ window.addEventListener('load',()=>{
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
+            popctn.style.opacity = '0'
         }
-        popctn.style.visibility = '0';
     })
 
     //为上传键绑定事件

@@ -1,5 +1,5 @@
 window.addEventListener('load',function(){
-    $('.top_nav ul li').hover(function(){
+      $('.top_nav ul li').hover(function(){
         $(this).children('ul').stop().slideToggle();
     })
     //搜索框的文字处理
@@ -9,12 +9,12 @@ window.addEventListener('load',function(){
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
-            popctn.style.display = 'block'
+            popctn.style.opacity = '.8'
         }
         for(let k = 0;k<lis.length;k++){
           lis[k].onclick = function(){
             ipt.value = lis[k].innerHTML.substring(2)
-            popctn.style.display = 'none'
+            popctn.style.opacity = '0'
           }
         }
     })
@@ -22,11 +22,11 @@ window.addEventListener('load',function(){
     for(let i = 0;i<lis.length;i++){
       arr.push(lis[i].innerHTML.substring(2));
     }
-    
+
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
-            // popctn.style.display = 'none'
+            popctn.style.opacity = '0'
         }
     })
 

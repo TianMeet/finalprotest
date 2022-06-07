@@ -93,13 +93,13 @@ header .logo_link {
     background-size: 36px;
 }
 .search_bar .popular_content {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 48px;
     left: 48px;
     width: 60%;
     height: 120px;
-    opacity: .8;
+    opacity: 0;
     background-color: #c7ecee;
     z-index: 40;
 }

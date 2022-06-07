@@ -90,6 +90,21 @@ window.addEventListener('load',()=>{
             flag3 = true;
         }
     })
+//分享方式
+    // var share = document.querySelector('.share');
+    // var ways = document.querySelector('.ways');
+    // share.addEventListener('mouseover',function(){
+    //     ways.style.display = 'block';
+    // })
+    // share.addEventListener('mouseout',function(){
+    //     ways.style.display = 'none';
+    // })
+    $('.share').hover(function(){
+        $('.ways').fadeIn(300);
+    },function(){
+        $('.ways').fadeOut(300);
+    })
+
     var addlikebtn = document.querySelector('.addlike');
     var downlikebtn = document.querySelector('.downlike');
     var addnum = addlikebtn.querySelector('.liketotle');
@@ -140,6 +155,31 @@ window.addEventListener('load',()=>{
             var comt = document.querySelector('#comment_block');
             comt.insertAdjacentHTML('beforeend',htmlstr);
             textarea.value = '';
+        }
+    })
+// 查看更多按钮
+    var distence = 800;
+    $('#look_more').hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>= distence){
+        $('#look_more').fadeIn(800);
+      }else{
+        $('#look_more').fadeOut(800);
+      }
+    })
+    var relecomm = document.querySelector('.relecomm_lists');
+    var lookmore = document.querySelector('#look_more');
+    var flaglook = true;
+    lookmore.addEventListener('click',function(){
+        // alert(1)
+        if(flaglook){
+            relecomm.style.height =  1000+'px';
+            lookmore.innerHTML = 'ess'
+            flaglook = false;
+        }else{
+            relecomm.style.height = 700+'px';
+            lookmore.innerHTML = 'ore'
+            flaglook = true;
         }
     })
 })

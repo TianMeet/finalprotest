@@ -176,18 +176,17 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 70%;
+    width: 67%;
     height: 100%;
-    padding: 0 10px;
-    background-color: orange;
+    padding: 0 10px 0px 0px;
+    background-color: white;
 }
 .relercomms {
     position: absolute;
     right: 0;
     top: 0;
-    width: 30%;
+    width: 32%;
     height: 100%;
-    padding-top: 8px;
     padding-left: 2px;
     /* background-color: orangered */
 }
@@ -238,7 +237,8 @@
     height: 100px;
     margin-top: 5px;
     padding: 10px;
-    background-color: white;
+    border-radius: 3px;
+    background-color: #eee;
 }
 .send_comment .tou {
     overflow: hidden;
@@ -263,7 +263,7 @@
 }
 .comment_submit {
     position: absolute;
-    right: 30px;
+    right: 18px;
     top: 10px;
     width: 80px;
     height: 80px;
@@ -284,6 +284,7 @@
     height: 90px;
     margin-bottom: 10px;
     border-radius: 4px;
+    border-radius: 1px;
     background: #dfe6e9;
 }
 .list .bcg {
@@ -292,10 +293,79 @@
     height: 90px;
     padding-top: 1px;
 }
+.list .bcg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .re_text {
     width: 53%;
     height: 100%;
 }
 .re_text a:hover h4{
     color: orangered;
+}
+.comment_block {
+    width: 100%;
+    height: 320px;
+    margin-top: 10px;
+}
+.comment {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-radius: 2px;
+    background-color: #34e7e4;
+}
+.comment .people {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 20px;
+    height: 70px;
+}
+.comment img {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.comment .name {
+    position: absolute;
+    left: 30px;
+    top: 48px;
+    width: 60px;
+    text-align: center;
+}
+.comment .owncom {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 420px;
+    height: 60px;
+    overflow: scroll;
+}
+.comment .addlike,
+.comment .downlike  {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    font-family: 'icomoon';
+}
+.comment .addlike {
+    right: 100px;
+    top: 54px;
+}
+.comment .downlike {
+    right: 40px;
+    top: 54px;
+}
+.comment button {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    width: 60px;
+    height: 30px;
 }

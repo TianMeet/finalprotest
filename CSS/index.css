@@ -594,6 +594,12 @@
     border-radius: 2px;
     /* background-color: red; */
 }
+.hotrcommdall a {
+    transition: all .3s;
+}
+.hotrcommdall a:hover {
+    color: orangered;
+}
 .hotrcommdall h3 {
     width: 100%;
     height: 7%;

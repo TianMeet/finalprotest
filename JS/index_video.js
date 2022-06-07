@@ -1,11 +1,48 @@
-window.addEventListener('load',function(){
+window.addEventListener('load',()=>{
+    $('.top_nav ul li').hover(function(){
+        $(this).children('ul').stop().slideToggle();
+    })
+    //搜索框的文字处理
+    var ipt = document.querySelector('#ipt');
+    var popctn = document.querySelector('.popular_content');
+    var lis = document.querySelector('.search_bar').querySelectorAll('li');
+    ipt.addEventListener('focus',function(){
+        if(this.value==='喜欢本大爷的居然只有你一个'){
+            this.value = '';
+            popctn.style.display = 'block'
+        }
+        for(let k = 0;k<lis.length;k++){
+          lis[k].onclick = function(){
+            ipt.value = lis[k].innerHTML.substring(2)
+            popctn.style.display = 'none'
+          }
+        }
+    })
+    var arr = [];
+    for(let i = 0;i<lis.length;i++){
+      arr.push(lis[i].innerHTML.substring(2));
+    }
+    
+    ipt.addEventListener('blur',function(){
+        if(this.value===''){
+            this.value = '喜欢本大爷的居然只有你一个';
+        }
+        popctn.style.visibility = '0';
+    })
+
+    //为上传键绑定事件
+    $('#upload').hover(function(){
+        $('#cbt').fadeIn(400);
+    },function(){
+        $('#cbt').fadeOut(400);
+    })
     var currentnum = document.querySelector('#currentnum').querySelector('div');
     var choosebtns = document.querySelector('#choosenum').querySelectorAll('a');
     for(var i = 0;i<choosebtns.length;i++){
         choosebtns[i].setAttribute('index',i);
         choosebtns[i].addEventListener('click',function(){
             var index = parseInt(this.getAttribute('index'));
-            console.log(index);
+            // console.log(index);
             for(var j = 0;j<choosebtns.length;j++){
                 choosebtns[j].classList.remove('selcolor');
             }
@@ -53,8 +90,56 @@ window.addEventListener('load',function(){
             flag3 = true;
         }
     })
-    // // more_rele模块滑动显示
-    // $('.more_relet').click(function(){
-    //     $('.reletoneof').animate({top : '-270px'})
-    // })
+    var addlikebtn = document.querySelector('.addlike');
+    var downlikebtn = document.querySelector('.downlike');
+    var addnum = addlikebtn.querySelector('.liketotle');
+    var flag4 = true;
+    var num = parseInt(addnum.innerHTML);
+    addlikebtn.addEventListener('click',function(){
+        if(flag5){
+            if(flag4){
+                this.style.color = 'orange';
+                flag4 = false;
+                addnum.innerHTML = num + 1;
+            }else{
+                this.style.color = '';
+                flag4 = true;
+                addnum.innerHTML = num ;
+            }
+        }
+    })
+    var flag5 = true;
+    downlikebtn.addEventListener('click',function(){
+        if(flag5){
+            if(!flag4){
+                flag4 = true;
+                addlikebtn.style.color = '';
+                this.style.color = 'orange';
+                addnum.innerHTML = num ;
+                flag5 = false;
+            }else {
+                this.style.color = 'orange';
+                flag5 = false;
+            }
+        }else{
+            this.style.color = '';
+            flag5 = true;
+        }
+    })
+    var textarea = document.querySelector('.context');
+    var comsubtn = document.querySelector('.comment_submit');
+    var comblock = document.querySelector('.comment_block');
+    comsubtn.addEventListener('click',function(){
+        if(textarea.value===''){
+            alert('请把想法表达出来再发表哦!');
+        }else{
+            var text = textarea.value;
+            var com = {comm :text}
+            var htmlstr = template('comments',com);
+            console.log(htmlstr);
+            var comt = document.querySelector('#comment_block');
+            comt.insertAdjacentHTML('beforeend',htmlstr);
+            textarea.value = '';
+        }
+    })
 })

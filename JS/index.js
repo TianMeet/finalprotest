@@ -4,16 +4,32 @@ window.addEventListener('load',function(){
     })
     //搜索框的文字处理
     var ipt = document.querySelector('#ipt');
+    var popctn = document.querySelector('.popular_content');
+    var lis = document.querySelector('.search_bar').querySelectorAll('li');
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
+            popctn.style.display = 'block'
+        }
+        for(let k = 0;k<lis.length;k++){
+          lis[k].onclick = function(){
+            ipt.value = lis[k].innerHTML.substring(2)
+            popctn.style.display = 'none'
+          }
         }
     })
+    var arr = [];
+    for(let i = 0;i<lis.length;i++){
+      arr.push(lis[i].innerHTML.substring(2));
+    }
+    
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
+            // popctn.style.display = 'none'
         }
     })
+
     //为上传键绑定事件
     $('#upload').hover(function(){
         $('#cbt').fadeIn(400);

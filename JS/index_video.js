@@ -9,12 +9,13 @@ window.addEventListener('load',()=>{
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
-            popctn.style.opacity = '.8'
+            popctn.style.display = 'block'
+            popctn.style.height = 120+'px';
         }
         for(let k = 0;k<lis.length;k++){
           lis[k].onclick = function(){
             ipt.value = lis[k].innerHTML.substring(2)
-            popctn.style.opacity = '0'
+            popctn.style.height = 0+'px';
           }
         }
     })
@@ -22,11 +23,11 @@ window.addEventListener('load',()=>{
     for(let i = 0;i<lis.length;i++){
       arr.push(lis[i].innerHTML.substring(2));
     }
-    
+
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
-            popctn.style.opacity = '0'
+            popctn.style.height = 0+'px';
         }
     })
 

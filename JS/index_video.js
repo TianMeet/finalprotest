@@ -9,13 +9,13 @@ window.addEventListener('load',()=>{
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
-            popctn.style.display = 'block'
-            popctn.style.height = 120+'px';
+            popctn.style.left = 48 +'px';
         }
         for(let k = 0;k<lis.length;k++){
           lis[k].onclick = function(){
-            ipt.value = lis[k].innerHTML.substring(2)
-            popctn.style.height = 0+'px';
+            ipt.value = this.innerHTML.substring(2)
+            console.log(k);
+            popctn.style.left = -99999+'px';
           }
         }
     })
@@ -23,14 +23,15 @@ window.addEventListener('load',()=>{
     for(let i = 0;i<lis.length;i++){
       arr.push(lis[i].innerHTML.substring(2));
     }
-
+// console.log(arr);
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
-            popctn.style.height = 0+'px';
-        }
+        }else{
+           popctn.style.left = -99999+'px';
+       }
+      // popctn.style.left = -99999+'px';
     })
-
     //为上传键绑定事件
     $('#upload').hover(function(){
         $('#cbt').fadeIn(400);
@@ -182,5 +183,17 @@ window.addEventListener('load',()=>{
             lookmore.innerHTML = 'ore'
             flaglook = true;
         }
+    })
+    var distence = 200;
+    $('#gotopbtn').hide();
+    $(window).scroll(function(){
+      if($(this).scrollTop()>= distence){
+        $('#gotopbtn').fadeIn(500);
+      }else{
+        $('#gotopbtn').fadeOut(500);
+      }
+    })
+    $('#gotopbtn').click(function(){
+      $('body,html').animate({scrollTop:0},400)
     })
 })

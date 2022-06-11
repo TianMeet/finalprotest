@@ -5,8 +5,8 @@ window.addEventListener('load',function(){
     //搜索框的文字处理
     var ipt = document.querySelector('#ipt');
     var popctn = document.querySelector('.popular_content');
-    var lis = document.querySelector('.search_bar').querySelectorAll('li');
-    console.log(lis);
+    var lis = popctn.querySelectorAll('li');
+    // console.log(lis);
     ipt.addEventListener('focus',function(){
         if(this.value==='喜欢本大爷的居然只有你一个'){
             this.value = '';
@@ -14,8 +14,8 @@ window.addEventListener('load',function(){
         }
         for(let k = 0;k<lis.length;k++){
           lis[k].onclick = function(){
-            console.log(lis[k].innerHTML.substring(2));
-            ipt.value = lis[k].innerHTML.substring(2)
+            ipt.value = this.innerHTML.substring(2)
+            console.log(k);
             popctn.style.left = -99999+'px';
           }
         }
@@ -28,8 +28,10 @@ window.addEventListener('load',function(){
     ipt.addEventListener('blur',function(){
         if(this.value===''){
             this.value = '喜欢本大爷的居然只有你一个';
-            popctn.style.left = -99999+'px';
-        }
+        }else{
+           popctn.style.left = -99999+'px';
+       }
+      // popctn.style.left = -99999+'px';
     })
 
     //为上传键绑定事件
